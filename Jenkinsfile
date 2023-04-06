@@ -19,13 +19,13 @@ pipeline {
                 sh 'mvn verify -DskipUnitTests'
             }
         }
-        /*
+        
         stage('MAVEN BUILD') {
             steps {
                 sh 'mvn clean install'
             }
         }
-
+        /*
       stage('STATIC CODE ANALYSIS') {
             steps {
                 script {
