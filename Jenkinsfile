@@ -25,7 +25,7 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        /*
+    
       stage('STATIC CODE ANALYSIS') {
             steps {
                 script {
@@ -39,11 +39,11 @@ pipeline {
         stage('QUALITY GATE STATUS') {
             steps {
                 script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'sonarqubetoken'
+                    waitForQualityGate abortPipeline: false, credentialsId: 'token6'
                 }
             }
         }
-
+        /*
         stage('Upload Artifacts to Nexus'){
             
             steps{
