@@ -14,12 +14,12 @@ pipeline {
             }
         }
 
-        /*stage('INTEGRATION TESTING') {
+        stage('INTEGRATION TESTING') {
             steps {
                 sh 'mvn verify -DskipUnitTests'
             }
         }
-
+        /*
         stage('MAVEN BUILD') {
             steps {
                 sh 'mvn clean install'
